@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent" android:background="#323333">
+
+
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="match_parent" android:layout_height="wrap_content">
+		<CheckBox android:id="@+id/checkbox" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Mr"
+			android:layout_weight="1" android:textSize="12sp" />
+		<CheckBox android:id="@+id/checkbox" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Mrs"
+			android:layout_weight="1" android:textSize="12sp" />
+		<CheckBox android:id="@+id/checkbox" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Miss"
+			android:layout_weight="1" android:textSize="12sp" />
+	</LinearLayout>
+
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="match_parent" android:layout_height="wrap_content">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="@string/cust_name"
+			android:padding="5dp" />
+		<EditText android:layout_height="wrap_content" android:id="@+id/cust_name"
+			android:layout_width="wrap_content" android:inputType="textPersonName"
+			android:layout_weight="1" android:padding="3dp">
+		</EditText>
+	</LinearLayout>
+
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="match_parent" android:layout_height="wrap_content">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="@string/apt_house_num"
+			android:padding="5dp" />
+		<EditText android:layout_height="wrap_content" android:id="@+id/apt_house_num"
+			android:layout_width="match_parent" android:padding="3dp">
+			<requestFocus></requestFocus>
+		</EditText>
+	</LinearLayout>
+
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="match_parent" android:layout_height="wrap_content">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="@string/town"
+			android:padding="5dp" />
+		<EditText android:layout_height="wrap_content" android:id="@+id/town"
+			android:layout_width="match_parent" android:padding="3dp">
+		</EditText>
+	</LinearLayout>
+
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="match_parent" android:layout_height="wrap_content">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="@string/ph_num"
+			android:padding="5dp" />
+		<EditText android:layout_height="wrap_content" android:id="@+id/ph_num"
+			android:layout_width="match_parent" android:inputType="phone"
+			android:padding="3dp">
+		</EditText>
+	</LinearLayout>
+
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="match_parent" android:layout_height="wrap_content">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="@string/email"
+			android:padding="5dp" />
+		<EditText android:layout_height="wrap_content" android:id="@+id/email"
+			android:layout_width="match_parent" android:inputType="textEmailAddress"
+			android:padding="3dp">
+		</EditText>
+	</LinearLayout>
+
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="@string/energy_type" />
+	<RadioGroup android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="horizontal">
+
+		<RadioButton android:id="@+id/radio_gas"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:text="Gas Sale" android:layout_weight="1" />
+
+		<RadioButton android:id="@+id/radio_elec"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:text="Electricity Sale" android:layout_weight="1" />
+	</RadioGroup>
+
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="@string/rating" />
+	<RatingBar android:id="@+id/rating" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:numStars="5"
+		android:stepSize="1.0" />
+
+	<Button android:id="@+id/confirm" android:text="@string/confirm"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_weight="1" />
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gas And Electricity Sales</string>
+    <string name="no_sales">No Sales Yet</string>
+    <string name="menu_insert">Add Sale</string>
+    <string name="menu_delete">Delete Sale</string>
+    <string name="mr">Mr</string>
+    <string name="cust_name">Name</string>
+    <string name="apt_house_num">House No</string>
+    <string name="town">Town or City</string>
+    <string name="county">County</string>
+    <string name="ph_num">Phone Number</string>
+    <string name="email">Email</string>
+    <string name="energy_type">What type of energy sale is this?</string>
+    <string name="rating">Rate Sales Representative?</string>
+    <string name="edit_sale">Edit This Sale</string>
+    <string name="confirm">Confirm Sale</string>
+</resources>
